@@ -7,4 +7,5 @@ Tant que cette variable n'atteint pas 10, il faut :
     l'incrementer */
 
 for ($i = 0; $i <= 10; $i++)
-echo $i;?>
+echo ' '. $i;
+?>
