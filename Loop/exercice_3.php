@@ -10,6 +10,6 @@ Tant que la première variable n'est pas inférieur ou égale à 10 :
  */
 $i = 100;
 $nb = 20;
-while ($i <= 10)
-echo ' '. $i-- * $nb;
+for ($i = 100; $i >= 10; $i--)
+echo ' '. $i * $nb;
 ?>
