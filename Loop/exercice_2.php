@@ -9,5 +9,5 @@ Tant que la première variable n'est pas supérieur à 20 :
 $nb = 12;
 $i = 0;
 while ($i < 20)
-echo $i++
+echo $i++ * $nb;
 ?>
