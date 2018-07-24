@@ -11,7 +11,7 @@ if(isset($_GET['semaine'])) {
     echo $_GET['semaine'];
     }
     if(!isset($_GET['semaine'])) {
-    echo "le querystring ne contient pas la bonne semaine";
+    echo "le querystring ne contient pas les bons paramètres";
     }
 ?>
 </body>

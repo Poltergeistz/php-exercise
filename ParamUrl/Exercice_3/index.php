@@ -11,7 +11,7 @@ if(isset($_GET['dateDebut']) && ($_GET['dateFin'])) {
     echo $_GET['dateDebut'] . "\n" . $_GET['dateFin'];
     }
     if(!isset($_GET['dateDebut']) && ($_GET['dateFin'])) {
-    echo "le querystring ne contient pas la date de debut et la date de fin";
+    echo "le querystring ne contient pas les bons paramètres";
     }
 ?>
 </body>
