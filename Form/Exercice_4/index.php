@@ -16,7 +16,7 @@
  /* ##Exercice 4 Avec le formulaire de l'exercice 2, afficher dans la page user.php 
  les données du formulaire transmises.
  */
- echo $_GET['nom'] . "\n" . $_GET['prenom'];
+ echo $_POST['nom'] . "\n" . $_POST['prenom'];
  ?>
 </body>
 </html>
