@@ -13,8 +13,8 @@
 en plus de ce qui est demandé sur les exercices précédent, 
 vérifier que le fichier transmis est bien un fichier pdf. 
 */
-if (isset($_POST['nom']) && isset($_POST['prenom']) && isset($_POST['civilité']) && pathinfo($_FILES["file"]["filename"], PATHINFO_EXTENSION) == "pdf"){
-  echo strip_tags($_POST['civilité'] . " " . $_POST['nom'] . " " . $_POST["prenom"] . "\n" . pathinfo($_FILES["file"]["name"], PATHINFO_EXTENSION));
+if (isset($_POST['nom']) && isset($_POST['prenom']) && isset($_POST['civilité']) && pathinfo($_POST["file"]["filename"], PATHINFO_EXTENSION) == "pdf"){
+  echo strip_tags($_POST['civilité'] . " " . $_POST['nom'] . " " . $_POST["prenom"] . "\n" . pathinfo($_POST["file"]["name"], PATHINFO_EXTENSION));
 }
 else{ ?>
 <form action="/index.php" method="post" enctype="multipart/form-data">
